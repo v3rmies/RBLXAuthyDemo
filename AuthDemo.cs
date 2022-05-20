@@ -51,5 +51,12 @@ namespace SimpleRobloxAuthForm6969
             string robloxid = RBLXAuth.id;
             MessageBox.Show(robloxid);
         }
+        
+        
+        private void button5_Click(object sender, EventArgs e) // Get HWID button
+        {
+            string hwid = RBLXAuth.get_hwid();
+            MessageBox.Show(hwid);
+        }
     }
 }
