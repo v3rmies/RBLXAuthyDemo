@@ -20,8 +20,10 @@ namespace SimpleRobloxAuthForm6969
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //Required startup code. It needs to be in form load or else it wont work.
             RBLXAuth.init(); // loads rblxauth.
             RBLXAuth.pastebin = ""; // this is where you will put the whitelisted users roblox usernames in a pastebin raw link.
+            /// End of required code
             pictureBox1.ImageLocation = RBLXAuth.get_avatar(); // Loads users avatar into picturebox
         }
 
